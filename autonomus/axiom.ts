@@ -20,7 +20,7 @@ export const getTokenInfo = async (
 ): Promise<TokenAnalytics> => {
   try {
     const response = await axios.get<TokenAnalytics>(
-      `https://api5.axiom.trade/token-info?pairAddress=${pairAddress}`,
+      `${process.env.AXIOM_API_URL}/token-info?pairAddress=${pairAddress}`,
       {
         headers: {
           Accept: "application/json",
