@@ -1,40 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Threx AI
+
+Threx is a modern AI agent terminal system built with Next.js that leverages multiple AI providers (OpenAI, Claude, Perplexity) and is deployed on Railway for seamless cloud hosting.
+
+## Key Features
+
+- Multi-Model Integration: Seamlessly switch between OpenAI, Claude, and Perplexity APIs based on task requirements and user preferences
+- Persistent Context Management: Store conversation history and agent state across sessions using Next.js API routes and database integration
+- Terminal-Like Interface: Clean, responsive CLI-inspired UI with command history, autocomplete, and syntax highlighting
+- Streaming Responses: Real-time streaming of AI responses for immediate feedback
+Tool Connection Framework: Extensible system for connecting to external APIs, databases, and development tools
+- Agent Memory & Knowledge Base: Maintain project-specific knowledge and previous interactions for contextual assistance
+- Railway Deployment: One-click deployment with automatic scaling and environment management
+
+## Technical Stack
+
+- Frontend: Next.js with TypeScript for type safety
+- Backend: Next.js API routes for serverless functions
+- AI Integration: OpenAI, Anthropic Claude, and Perplexity APIs
+- Database: Supabase
+- Authentication: Privy auth
+- Styling: Tailwind CSS for responsive terminal design
+- Deployment: Railway for simplified cloud hosting
 
 ## Getting Started
 
-First, run the development server:
+- Clone the repository
+- Install dependencies: pnpm install
+- Set up environment variables in .env
+- Run the development server: npm run dev
+- Open http://localhost:3000 in your browser
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Deployment to Railway
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Install the Railway CLI: ``npm i -g @railway/cli``
+- Login to Railway: ``railway login``
+- Link your project: ``railway link``
+- Deploy your application: ``railway up``
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+## Contributing
+Contributions are welcome! Please feel free to submit a Pull Request.
